@@ -4,7 +4,7 @@
 
 * Divide and Conquer : it is an algorithm pattern where problem is divided into smaller subproblems and then each subproblem is solved/conquered individualy.
 1. Divide : e.g divide array into two smaller arrays
-2. Conquer : e.g recursive step (recall the same function on both smaller arrays)
+2. Conquer : e.g recursive step (recall the same function on both or one of the smaller arrays
 3. Combine : e.g merge - combine two sorted arrays
 
 # Recursion 
@@ -15,13 +15,13 @@
 
 # Merge Sort 
 
-* Merge Sort : This is a recursive divide and conquer algorithm. array will be divided into two subarrays and then recursive calls on both halves and then merging. Merge step is the most important step where things are compared and combined into one array and returned to the previous instance. Merge is the most important step in this algorithm
+* Merge Sort : This is a recursive divide and conquer algorithm. Array will be divided into two subarrays and then recursive calls on both halves and finally merging step. Merge step is the most important step where things are compared and combined into one array and returned to the previous instance. Merge is the most important step in this algorithm
 
 # Quick Sort
 
-* Quick Sort : This is a recursive divide and conquer algorithm. array will be divided into two subarrays and then partitioned and then recursive calls and reaching the bottom of the array, array should be sorted by then. Partition is the most important step in this algorithm
+* Quick Sort : This is a recursive divide and conquer algorithm. Array will be divided into two subarrays and then partitioned and finally recursive calls, array should be sorted by then. Partitioning is the most important step in this algorithm
 
-* Quick Select : This is a recursive algorithm to choose the median of an array in logn time. usually used with quick sort to choose a the median element in an array as the pivot for quick sort. It helps making quick sort faster by selecting the median as the pivot index
+* Quick Select : This is a recursive algorithm to choose the median in an array in O(logN) time. usually used with quick sort to choose the median element in an array as the pivot for quick sort. It helps making quick sort faster by selecting the median as the pivot index
 
 * Mom Select : This is a recursive algorithm usually used with quick select to choose the median of medians which would be a good pivot to make quick select algorithm more efficient and therefore make quick sort algorithm faster. 
 
