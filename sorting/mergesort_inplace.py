@@ -1,8 +1,9 @@
 # This is in place algorithm, meaning right and left arrays are created every time mergesort is called
 # This algorithm is to sort an array in O(NlogN) running time
 # This is not in-place sorting algorithm
-# Time Complexity: O(NlogN) in all cases (best, average, worst)
-# Space Complexity: TBD
+# Time Complexity: n^2 in all cases (best, average, worst)
+# Space Complexity: O(1), no extra space used
+
 def merge_sort(arr, left_idx, right_idx) :
 
     if left_idx >= right_idx:

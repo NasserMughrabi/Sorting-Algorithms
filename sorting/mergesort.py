@@ -2,7 +2,7 @@
 # This algorithm is to sort an array in O(NlogN) running time
 # This is not in-place sorting algorithm
 # Time Complexity: O(NlogN) in all cases (best, average, worst)
-# Space Complexity: TBD
+# Space Complexity: O(N), left and right arrays are used every call
 
 def merge_sort(arr) :
     

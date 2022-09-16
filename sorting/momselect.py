@@ -1,6 +1,6 @@
 # This algorithm is a faster implementation of quick select where I use momselect to choose the median of median in an array to be the pivot_index for partition (to choose good pivot) and then do the normal quick select to find the median/kth smallest. The idea of mom select is to choose a good pivot for partition which will make quick select faster by avoiding choosing a bad pivot and spending more time finding the median.
-# Time Complexity : TBD
-# Space Complexity : TBD
+# Time Complexity : O(n)
+# Space Complexity : O(n), partition is not in place, creates two extra arrays. it could be done in palce though
 
 def momselect(arr, k) :
 

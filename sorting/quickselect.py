@@ -1,7 +1,8 @@
 # This algorithm is to choose the kth smallest element in an array 
 # This algorithm is also to find the median element in an array by passing k = len(arr)/2 - 1
 # Time Complexity: O(LogN)
-# Space Complexity: TBD
+# Space Complexity: O(1), in place algorithm
+
 def quickselect(arr, left_idx, right_idx, k) :
     if left_idx >= right_idx :
         return arr[left_idx]

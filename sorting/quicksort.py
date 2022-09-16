@@ -1,6 +1,6 @@
 # Quick sort is to sort an algorithm in a O(NlogN) running time best case
 # Time Complexity: best: O(NlogN), average: O(NlogN), worst: O(N^2)
-# Space Complexity: 
+# Space Complexity: O(1), in place algorithm
 
 def quicksort(arr, left_idx, right_idx) :
 
