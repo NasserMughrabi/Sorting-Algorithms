@@ -1,19 +1,20 @@
-# In place algorithm, so mid_idx is on the left side
+# This is in place algorithm, meaning right and left arrays are created every time mergesort is called
+# This algorithm is to sort an array in O(NlogN) running time
+# This is not in-place sorting algorithm
+# Time Complexity: O(NlogN) in all cases (best, average, worst)
+# Space Complexity: TBD
 def merge_sort(arr, left_idx, right_idx) :
-    # left_idx = 0
-    # right_idx = len(arr) -1
 
     if left_idx >= right_idx:
         return
     
     # divide (iterate down)
     mid_idx = left_idx + (right_idx - left_idx)//2 # round down
-    # print( "Going down/toend", left, right)
+
     # recursive
     merge_sort(arr, left_idx, mid_idx)
     merge_sort(arr, mid_idx+1, right_idx)
 
-    # print( "Going up/tostart", left, right)
     # conqure (iterate up)
     return merge(left_idx, mid_idx, right_idx, arr) 
 
@@ -29,7 +30,6 @@ def merge(left_idx, mid_idx, right_idx, arr) :
         else :
             left_start = left_start +1
 
-    print("merged", arr)
     return arr
 
 def swap(arr, left_idx, right_idx) :
@@ -39,5 +39,3 @@ def swap(arr, left_idx, right_idx) :
     arr[left_idx] = temp
 
 merge_sort([4,1,2,9,5], 0, 4)
-# merge_sort([1,2,3,9,4,5])
-# print(merge_sort([1,2,3,9,4,5]))

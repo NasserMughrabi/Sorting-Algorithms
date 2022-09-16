@@ -1,4 +1,9 @@
-# Not in place algorithm, so mid_idx is on the right side
+# Not in place algorithm, meaning no extra space is used (indices are used instead of new arrays)
+# This algorithm is to sort an array in O(NlogN) running time
+# This is not in-place sorting algorithm
+# Time Complexity: O(NlogN) in all cases (best, average, worst)
+# Space Complexity: TBD
+
 def merge_sort(arr) :
     
     # base case
@@ -9,19 +14,17 @@ def merge_sort(arr) :
     mid_idx = len(arr)//2 # round down
     left = arr[:mid_idx]
     right = arr[mid_idx:]
-    
-    # print( "Going down/toend", left, right)
+
+    # Copy array in O(n) - n is size of array
     # recursive
     left_arr = merge_sort(left)
     right_arr = merge_sort(right)
 
-    # print( "Going up/tostart", left, right)
     # conqure (iterate up)
     return merge(left_arr, right_arr, arr.copy()) 
 
 def merge(left_arr, right_arr, new_arr) :
     left_idx, right_idx = 0, 0
-    # new_arr = [0] * (len(left_arr) + len(right_arr))
     
     while left_idx < len(left_arr) and right_idx < len(right_arr) :
         if right_arr[right_idx] < left_arr[left_idx] :
@@ -39,9 +42,6 @@ def merge(left_arr, right_arr, new_arr) :
         new_arr[left_idx + right_idx] = (right_arr[right_idx])    
         right_idx = right_idx +1
 
-    # print("merged", new_arr)
     return new_arr
 
 merge_sort([4,1,2,9,5])
-# merge_sort([1,2,3,9,4,5])
-# print(merge_sort([1,2,3,9,4,5]))
