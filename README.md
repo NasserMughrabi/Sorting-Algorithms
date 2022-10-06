@@ -1,5 +1,11 @@
 # Sorting Algorithms and Algorithm Patterns
 
+# Recursion
+
+- The idea of recursion is that instead of conquering the problem top to bottom for graph/tree or start to end for array/string in a for/while loop, in recursion you conquer the problem from bottom to top (what's before the recursive call(s) gets executed going top to bottom for graph/tree or start to end for array/string and what's after the recursive call(s) gets executed going bottom to top for graph/tree or end to start for array/string). In short, in recursion you conquer the problem from bottom to top. What's before the recursive call(s) gets executed going top to bottom and what's after the recursive call(s) gets executed going bottom to top
+
+- Recursion : it is an algorithm pattern where the problem is conquered bottom to top instead of top to bottom. The code will not execute what is after the recursive call until the bottom element is reached
+
 # Divide and Conquer
 
 - Divide and Conquer : it is an algorithm pattern where problem is divided into smaller subproblems and then each subproblem is solved/conquered individualy.
@@ -7,12 +13,6 @@
 1. Divide : e.g divide array into two smaller arrays
 2. Conquer : e.g recursive step (recall the same function on both or one of the smaller arrays
 3. Combine : e.g merge - combine two sorted arrays
-
-# Recursion
-
-- The idea of recursion is that instead of conquering the problem top to bottom for graph/tree or start to end for array/string in a for/while loop, in recursion you conquer the problem from bottom to top (what's before the recursive call(s) gets executed going top to bottom for graph/tree or start to end for array/string and what's after the recursive call(s) gets executed going bottom to top for graph/tree or end to start for array/string). In short, in recursion you conquer the problem from bottom to top. What's before the recursive call(s) gets executed going top to bottom and what's after the recursive call(s) gets executed going bottom to top
-
-- Recursion : it is an algorithm pattern where the problem is conquered bottom to top instead of top to bottom. The code will not execute what is after the recursive call until the bottom element is reached
 
 # Merge Sort
 
